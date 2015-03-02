@@ -27,3 +27,23 @@ there):
   |   D          | deleted (using /bin/rm)                                   |
 
 ![screenshot2](https://bitbucket.org/rnml/hg-status-mode/raw/tip/screenshot2.png)
+
+  | Initial state | Action  | Final state  |
+  | ------------- | ------- | ------------ |
+  |   A           | commit  |   C          |
+  |   ?           | add     |   A          |
+  |   A           | delete  |   !          |
+  |   A           | forget  |   ?          |
+  |   A           | revert  |   ?          |
+  |   C           | forget  |   R          |
+  |   ?           | delete  |   D          |
+  |   !           | forget  |   R          |
+  |   I           | add     |   A          |
+  |   ?           | ignore  |   I          |
+  |   M           | commit  |   C          |
+  |   M           | delete  |   !          |
+  |   M           | forget  |   R          |
+  |   M           | revert  |   C          |
+  |   R           | commit  |   D          |
+  |   !           | revert  |   C          |
+  |   R           | revert  |   C          |
