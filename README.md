@@ -9,8 +9,8 @@ question.  These are set with mnemonic keys (see below).  The `!`
 command executes all pending marked actions, prompting for a commit
 message if necessary.
 
-The `B` column shows the status *B*efore any action is taken (i.e.,
-the current status).  The `A` column shows the status *A*fter `Action`
+The `B` column shows the status `B`efore any action is taken (i.e.,
+the current status).  The `A` column shows the status `A`fter `Action`
 is taken (i.e., the goal status).  The meaning of the status letters
 come from hg itself, with the excepton of D which doesn't apply there:
 
