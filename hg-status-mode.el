@@ -119,11 +119,12 @@
 (dolist (binding
          '(;; refresh
            ("g" hg-status)
-           ;; movement, exploration
+           ;; movement
            ("j" hg-status-next-entry)
            ("n" hg-status-next-entry)
            ("k" hg-status-prev-entry)
            ("p" hg-status-prev-entry)
+           ;; exploration
            ("s" hg-status-show-diff)
            ("f" hg-status-goto-file)
            ;; status marking/unmarking
@@ -136,7 +137,7 @@
            ("r" hg-status-mark-revert)
            ;; commit to marked actions
            ("!" hg-status-doit)))
-  (let* ((key (car binding))
+  (let* ((key (kbd (car binding)))
          (def (cadr binding)))
     (define-key hg-status-mode-map key def)))
 
