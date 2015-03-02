@@ -121,7 +121,9 @@
            ("g" hg-status)
            ;; movement, exploration
            ("j" hg-status-next-entry)
+           ("n" hg-status-next-entry)
            ("k" hg-status-prev-entry)
+           ("p" hg-status-prev-entry)
            ("s" hg-status-show-diff)
            ("f" hg-status-goto-file)
            ;; status marking/unmarking
