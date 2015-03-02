@@ -35,18 +35,18 @@ state:
   | Initial state | Action  | Mark key  | Final state  |
   | ------------- | ------- | --------- | ------------ |
   |   M           | commit  | `c`       |   C          |
-  |   M           | delete  | `d`       |   !          |
-  |   M           | forget  | `-`       |   R          |
-  |   M           | revert  | `r`       |   C          |
+  |               | delete  | `d`       |   !          |
+  |               | forget  | `-`       |   R          |
+  |               | revert  | `r`       |   C          |
   |   A           | commit  | `c`       |   C          |
-  |   A           | delete  | `d`       |   !          |
-  |   A           | forget  | `-`       |   ?          |
-  |   A           | revert  | `r`       |   ?          |
+  |               | delete  | `d`       |   !          |
+  |               | forget  | `-`       |   ?          |
+  |               | revert  | `r`       |   ?          |
   |   R           | commit  | `c`       |   D          |
-  |   R           | revert  | `r`       |   C          |
+  |               | revert  | `r`       |   C          |
   |   !           | revert  | `r`       |   C          |
-  |   !           | forget  | `-`       |   R          |
+  |               | forget  | `-`       |   R          |
   |   ?           | add     | `a`       |   A          |
-  |   ?           | delete  | `d`       |   D          |
-  |   ?           | ignore  | `i`       |   I          |
+  |               | delete  | `d`       |   D          |
+  |               | ignore  | `i`       |   I          |
   |   I           | add     | `a`       |   A          |
