@@ -32,21 +32,21 @@ Here's what it looks like after marking down some actions:
 Finally, here are all the valid `Action` setting commands for each
 state:
 
-  | Initial state | Action / key  | Final state  |
-  | ------------- | ------------- | ------------ |
-  |   M           | commit / `c`  |   C          |
-  |               | delete / `d`  |   !          |
-  |               | forget / `-`  |   R          |
-  |               | revert / `r`  |   C          |
-  |   A           | commit / `c`  |   C          |
-  |               | delete / `d`  |   !          |
-  |               | forget / `-`  |   ?          |
-  |               | revert / `r`  |   ?          |
-  |   R           | commit / `c`  |   D          |
-  |               | revert / `r`  |   C          |
-  |   !           | revert / `r`  |   C          |
-  |               | forget / `-`  |   R          |
-  |   ?           | add / `a`     |   A          |
-  |               | delete / `d`  |   D          |
-  |               | ignore / `i`  |   I          |
-  |   I           | add / `a`     |   A          |
+  | State change | Action / key  |
+  | ------------ | ------------- |
+  |   M -> C     | commit / `c`  |
+  |   M -> !     | delete / `d`  |
+  |   M -> R     | forget / `-`  |
+  |   M -> C     | revert / `r`  |
+  |   A -> C     | commit / `c`  |
+  |   A -> !     | delete / `d`  |
+  |   A -> ?     | forget / `-`  |
+  |   A -> ?     | revert / `r`  |
+  |   R -> D     | commit / `c`  |
+  |   R -> C     | revert / `r`  |
+  |   ! -> C     | revert / `r`  |
+  |   ! -> R     | forget / `-`  |
+  |   ? -> A     | add / `a`     |
+  |   ? -> D     | delete / `d`  |
+  |   ? -> I     | ignore / `i`  |
+  |   I -> A     | add / `a`     |
