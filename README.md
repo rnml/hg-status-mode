@@ -29,7 +29,8 @@ there):
 Here's what it looks like after marking down some actions:
 ![screenshot2](https://bitbucket.org/rnml/hg-status-mode/raw/tip/screenshot2.png)
 
-Finally, here are all the valid `Action` setting commands:
+Finally, here are all the valid `Action` setting commands for each
+state:
 
   | Initial state | Action  | Mark key  | Final state  |
   | ------------- | ------- | --------- | ------------ |
