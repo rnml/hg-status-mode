@@ -4,4 +4,6 @@ directory.
 
 ![screenshot](./screenshot.png)
 
-![IMAGE](raw/master/screenshot.png)
+![IMAGE](https://bitbucket.org/rnml/hg-status-mode/raw/master/screenshot.png)
+
+![ARGH](https://bitbucket.org/evzijst/speedometer/raw/master/screenshot.png)
