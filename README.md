@@ -3,3 +3,5 @@ Minimalist emacs major mode for viewing and editing
 directory.
 
 ![screenshot](./screenshot.png)
+
+![IMAGE](raw/master/screenshot.png)
