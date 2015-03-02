@@ -25,24 +25,27 @@ there):
   |   ?          | not tracked                                               |
   |   I          | ignored                                                   |
   |   D          | deleted (using /bin/rm)                                   |
-
+  
+Here's what it looks like after marking down some actions:
 ![screenshot2](https://bitbucket.org/rnml/hg-status-mode/raw/tip/screenshot2.png)
 
-  | Initial state | Action  | Final state  |
-  | ------------- | ------- | ------------ |
-  |   M           | commit  |   C          |
-  |   M           | delete  |   !          |
-  |   M           | forget  |   R          |
-  |   M           | revert  |   C          |
-  |   A           | commit  |   C          |
-  |   A           | delete  |   !          |
-  |   A           | forget  |   ?          |
-  |   A           | revert  |   ?          |
-  |   R           | commit  |   D          |
-  |   R           | revert  |   C          |
-  |   !           | revert  |   C          |
-  |   !           | forget  |   R          |
-  |   ?           | add     |   A          |
-  |   ?           | delete  |   D          |
-  |   ?           | ignore  |   I          |
-  |   I           | add     |   A          |
+Finally, here are all the valid `Action` setting commands:
+
+  | Initial state | Action  | Mark key  | Final state  |
+  | ------------- | ------- | --------- | ------------ |
+  |   M           | commit  | `c`       |   C          |
+  |   M           | delete  | `d`       |   !          |
+  |   M           | forget  | `-`       |   R          |
+  |   M           | revert  | `r`       |   C          |
+  |   A           | commit  | `c`       |   C          |
+  |   A           | delete  | `d`       |   !          |
+  |   A           | forget  | `-`       |   ?          |
+  |   A           | revert  | `r`       |   ?          |
+  |   R           | commit  | `c`       |   D          |
+  |   R           | revert  | `r`       |   C          |
+  |   !           | revert  | `r`       |   C          |
+  |   !           | forget  | `-`       |   R          |
+  |   ?           | add     | `a`       |   A          |
+  |   ?           | delete  | `d`       |   D          |
+  |   ?           | ignore  | `i`       |   I          |
+  |   I           | add     | `a`       |   A          |
