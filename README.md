@@ -32,21 +32,21 @@ Here's what it looks like after marking down some actions:
 Finally, here are all the valid `Action` setting commands for each
 state:
 
-    State change  Action  key 
-    -------------------------
-      M -> C      commit  `c` 
-      M -> !      delete  `d` 
-      M -> R      forget  `-` 
-      M -> C      revert  `r` 
-      A -> C      commit  `c` 
-      A -> !      delete  `d` 
-      A -> ?      forget  `-` 
-      A -> ?      revert  `r` 
-      R -> D      commit  `c` 
-      R -> C      revert  `r` 
-      ! -> C      revert  `r` 
-      ! -> R      forget  `-` 
-      ? -> A      add     `a`    
-      ? -> D      delete  `d` 
-      ? -> I      ignore  `i` 
-      I -> A      add     `a`    
+    Change   Action  Key     Change  Action  Key 
+    --------------------     -------------------
+    M -> C   commit  `c`     R -> D  commit  `c`
+    M -> !   delete  `d`     R -> C  revert  `r`
+    M -> R   forget  `-`     ! -> C  revert  `r`
+    M -> C   revert  `r`     ! -> R  forget  `-`
+    A -> C   commit  `c`     ? -> A  add     `a`
+    A -> !   delete  `d`     ? -> D  delete  `d`
+    A -> ?   forget  `-`     ? -> I  ignore  `i`
+    A -> ?   revert  `r`     I -> A  add     `a`
+
+
+
+
+
+
+
+
