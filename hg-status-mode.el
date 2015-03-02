@@ -1,7 +1,6 @@
 
-(define-derived-mode hg-status-mode tabulated-list-mode
-  "hg-status-mode"
-  "Minimalistic major mode for viewing/updating hg status"
+(define-derived-mode hg-status-mode tabulated-list-mode "hg-status"
+  "Minimalistic major mode for viewing and editing hg status"
   (setq tabulated-list-format [("Action" 6 nil) ;; pending action
                                ("B"      1 nil) ;; status
                                ("A"      1 nil) ;; future status
