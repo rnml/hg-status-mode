@@ -15,16 +15,14 @@ is taken (i.e., the goal status).  The status letters' meaning is as
 in the output of hg status (with the excepton of D which doesn't apply
 there):
 
-  | Status code  | Meaning                                                   |
-  | ------------ | --------------------------------------------------------- |
-  |   M          | modified                                                  |
-  |   A          | added                                                     |
-  |   R          | removed                                                   |
-  |   C          | clean                                                     |
-  |   !          | missing (deleted by non-hg command, but still tracked)    |
-  |   ?          | not tracked                                               |
-  |   I          | ignored                                                   |
-  |   D          | deleted (using /bin/rm)                                   |
+    M = modified
+    A = added
+    R = removed
+    C = clean
+    ! = missing (deleted by non-hg command, but still tracked)
+    ? = not tracked
+    I = ignored
+    D = deleted (using /bin/rm)
   
 Here's what it looks like after marking down some actions:
 ![screenshot2](https://bitbucket.org/rnml/hg-status-mode/raw/tip/screenshot2.png)
