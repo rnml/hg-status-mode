@@ -30,20 +30,19 @@ there):
 
   | Initial state | Action  | Final state  |
   | ------------- | ------- | ------------ |
-  |   A           | commit  |   C          |
-  |   ?           | add     |   A          |
-  |   A           | delete  |   !          |
-  |   A           | forget  |   ?          |
-  |   A           | revert  |   ?          |
-  |   C           | forget  |   R          |
-  |   ?           | delete  |   D          |
-  |   !           | forget  |   R          |
-  |   I           | add     |   A          |
-  |   ?           | ignore  |   I          |
   |   M           | commit  |   C          |
   |   M           | delete  |   !          |
   |   M           | forget  |   R          |
   |   M           | revert  |   C          |
+  |   A           | commit  |   C          |
+  |   A           | delete  |   !          |
+  |   A           | forget  |   ?          |
+  |   A           | revert  |   ?          |
   |   R           | commit  |   D          |
-  |   !           | revert  |   C          |
   |   R           | revert  |   C          |
+  |   !           | revert  |   C          |
+  |   !           | forget  |   R          |
+  |   ?           | add     |   A          |
+  |   ?           | delete  |   D          |
+  |   ?           | ignore  |   I          |
+  |   I           | add     |   A          |
